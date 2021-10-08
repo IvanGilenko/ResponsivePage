@@ -1,0 +1,183 @@
+html{
+    font-size: 18px;
+    color: ghostwhite;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+hr{
+    width: 70%;
+    border-top: 1px solid white;
+    margin-top: 5rem;
+
+}
+
+ul{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:black;
+    display: flex;
+  }
+  
+
+li a{
+    display: block;
+    color: ghostwhite;
+    text-align: center;
+    padding: 0.85rem 1rem;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover:not(.active){
+    background-color: midnightblue;
+}
+
+.active {
+    background-color: midnightblue;
+  }
+
+#banner{
+    background-image: url("./images/banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 46rem;
+}
+
+#banner h1{
+    margin-top: 10%;
+    font-size: 3.75rem;
+    font-weight: 600;
+}
+
+#body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
+}
+
+#body h2{
+    margin-top: 9rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#body .text{
+    width: 50%;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#gallery{
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+#gallery h2{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.img-container{
+    flex: 1;
+}
+
+.img-container .thumbnail{
+    width: 100%;
+    border: 2px solid GhostWhite;
+    border-radius: 4px;
+}
+
+.img-container figcaption{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+#news h2{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#news{
+    text-align: justify;
+    width: 100%;
+}
+
+#news .newsbody{
+    display: flex;
+}
+
+.newsbody img{
+    width: 50%;
+    border: 2px solid GhostWhite;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.newsbody a{
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+.newsbody a:hover{
+    text-decoration: none;
+    color: midnightblue;
+}
+
+footer{
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+    margin: 2%;
+    margin-top: 5rem;
+}
+
+@media only screen and (max-width: 800px){
+    ul li{
+        display: none;
+    }
+    #body{
+        width: 100%;
+    }
+    #body .text{
+        width: 90%;
+    }
+
+    .gallery{
+        display: block;
+    }
+    
+    #news .newsbody{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #news h3{
+        text-align: center;
+    }
+}
+
